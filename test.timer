@@ -1,0 +1,11 @@
+[Unit]
+Description=test timer
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=90
+
+Persistent=ture
+
+[Install]
+WantedBy=timers.target

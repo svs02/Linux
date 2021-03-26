@@ -1,0 +1,13 @@
+[Unit]
+Description=this is a silly weather service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/vagrant/test.sh
+Restart=always
+WorkingDirectory=/home/vagrant
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
